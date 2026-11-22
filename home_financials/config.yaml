@@ -1,5 +1,5 @@
 name: Home Financials
-version: "1.0.0"
+version: "1.1.0"
 slug: home_financials
 description: Tax-loss harvesting for the Household's accounts
 url: https://github.com/shimopus/home-financials-addon
