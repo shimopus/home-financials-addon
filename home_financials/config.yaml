@@ -1,5 +1,5 @@
 name: Home Financials
-version: "1.2.0"
+version: "1.3.0"
 slug: home_financials
 description: Tax-loss harvesting for the Household's accounts
 url: https://github.com/shimopus/home-financials-addon
@@ -10,6 +10,10 @@ image: ghcr.io/shimopus/home-financials-{arch}
 init: false
 ingress: true
 ingress_port: 8099
+ports:
+  8100/tcp: null
+ports_description:
+  8100/tcp: Mac Browser Companion API (opt-in; leave empty to disable)
 panel_icon: mdi:finance
 panel_title: Finances
 homeassistant_api: true

@@ -2,6 +2,18 @@
 
 All notable changes to Home Financials are documented here.
 
+## v1.3.0 - 2026-11-28
+
+### Added
+- **Browser Companion API & pairing**: Opt-in `8100/tcp` Companion API port in add-on network configuration, token pairing and last-sync summary under **Settings → Browser Companion**, and `Companion` / `Manual` badges in **Last uploads** on Account screens.
+- **Vanguard broker support**: Add Vanguard accounts with a configurable **Settlement fund** (default `VMFXX`) and upload multi-section Vanguard `OfxDownload.csv` exports (automatically skipping 401(k) sections), plus open-lot sync support for non-Reserve Taxable accounts.
+- **Confirm sold for omitted holdings**: Positions absent from a newer snapshot remain marked **Stale** until confirmed sold on the Account screen or opted into during upload preview.
+
+### Changed
+- **Snapshot precedence**: Uploading a Positions or Lot file with a file date on or before the stored snapshot now requires explicit override confirmation in Preview.
+- **Reserve-pool Taxable accounts**: Lot files are optional for Reserve-pool Taxable accounts, Reserve-pool notices explain that they are excluded from harvesting, and reinvestment warnings are suppressed for Reserve-pool accounts and securities matching a Reserve holding's Identical group.
+- **Holding deep-links**: Linking to an Account screen with a symbol filter scrolls to and highlights the matching holding row.
+
 ## v1.2.0 - 2026-11-27
 
 ### Added
