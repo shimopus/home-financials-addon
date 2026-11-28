@@ -2,6 +2,12 @@
 
 All notable changes to Home Financials are documented here.
 
+## v1.3.1 - 2026-11-28
+
+### Fixed
+- Treated Fidelity `FCASH` and core-account sweep/reinvestment rows as cash rather than fund trades or dividend reinvestments, preventing false reinvestment warnings.
+- Chunked multi-year Fidelity history fetches into 365-day windows to satisfy Fidelity's date-range limit.
+
 ## v1.3.0 - 2026-11-28
 
 ### Added
