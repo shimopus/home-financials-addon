@@ -2,6 +2,15 @@
 
 All notable changes to Home Financials are documented here.
 
+## v1.3.2 - 2026-11-28
+
+### Added
+- **Per-account Money market funds**: Configure comma-separated money market tickers per Account under **Settings → Accounts** (for Fidelity, Schwab, or Vanguard) so future Positions and Transaction history imports treat them as cash.
+- **Irrecoverable transaction recharacterization**: Adding cash tickers to an existing Account prompts with an irrecoverable-change confirmation before converting matching stored transactions to cash and recomputing Wash sales.
+
+### Fixed
+- Normalized pre-`v1.3.1` Fidelity `FCASH` history rows to cash during database migration so **Taxes** no longer reports legacy `FCASH` core-account redemptions as missing realized data.
+
 ## v1.3.1 - 2026-11-28
 
 ### Fixed
